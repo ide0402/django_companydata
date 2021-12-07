@@ -25,7 +25,7 @@ SECRET_KEY = '2ro8ifhsy#=hewfnvk=8m@&w^^row3qfek9iv@7c0+-+!t5g2s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['01b523bf3c3143e8a5766d5c2bbcda82.vfs.cloud9.ap-northeast-1.amazonaws.com']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'import_export',
     'company_info',
-    'debug_toolbar',
+    # 'debug_toolbar',
     'corsheaders',
     'rest_framework',
     'api.apps.ApiConfig',
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.middleware.csrf.CsrfResponseMiddleware',
+    # 'django.middleware.csrf.CsrfResponseMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -135,6 +135,7 @@ except ImportError:
 
 if not DEBUG:
     ALPHA_VANTAGE_API_KEY = os.environ['ALPHA_VANTAGE_API_KEY']
+    ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS']
 
 INTERNAL_IPS = ['127.0.0.1']
 DEBUG_TOOLBAR_CONFIG = {
