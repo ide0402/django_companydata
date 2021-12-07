@@ -1,7 +1,7 @@
 # description
-上場会社に係る指標
-①株価
-②実績（今後実装予定）
+上場会社に係る指標  
+①株価  
+②実績（今後実装予定）  
 ③金利などの経済指標との相関チェック(今後実装予定)
 
 # フロントエンド(React)
@@ -9,9 +9,9 @@ https://github.com/ide0402/companydata_front
 
 # ディレクトリ構成
 
-django
-　├── companydata (バックエンド)
-　└── companydata_front (フロントエンド)
+django  
+ ├── companydata (バックエンド)  
+ └── companydata_front (フロントエンド)
 
 # 環境
 - python  3.7.2
